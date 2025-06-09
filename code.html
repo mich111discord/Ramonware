@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ransomware Alert</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+    :root {
+      --color-bg: #ffffff;
+      --color-text-main: #111827;
+      --color-text-secondary: #6b7280;
+      --color-primary: #111827;
+      --color-button-bg: #111827;
+      --color-button-text: #ffffff;
+      --border-radius: 0.75rem;
+      --shadow-card: rgba(0, 0, 0, 0.05);
+      --font-family: 'Poppins', sans-serif;
+    }
+    /* Reset and base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: var(--color-bg);
+      font-family: var(--font-family);
+      color: var(--color-text-main);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+    }
+    main.container {
+      background: #fff;
+      box-shadow: 0 10px 15px var(--shadow-card);
+      border-radius: var(--border-radius);
+      padding: 3rem 3rem 3rem 3rem;
+      max-width: 480px;
+      width: 90vw;
+      text-align: center;
+    }
+
+    /* Padlock icon */
+    .icon-lock {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 1.5rem auto;
+      stroke: var(--color-primary);
+      stroke-width: 2;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 2.8rem;
+      margin: 0 0 1rem 0;
+    }
+
+    p {
+      font-size: 1.125rem;
+      color: var(--color-text-secondary);
+      margin-top: 0;
+      margin-bottom: 2.5rem;
+      line-height: 1.5;
+    }
+
+    button.ransom-btn {
+      padding: 0.85rem 2.5rem;
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--color-button-text);
+      background-color: var(--color-button-bg);
+      border: none;
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 8px rgba(17,24,39,0.15);
+    }
+    button.ransom-btn:hover, button.ransom-btn:focus {
+      background-color: #374151;
+      outline: none;
+      box-shadow: 0 6px 12px rgba(55,65,81,0.3);
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-labelledby="title">
+    <svg class="icon-lock" aria-hidden="true" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+      <rect x="6" y="11" width="12" height="10" rx="2" ry="2"></rect>
+      <path d="M9 11V7a3 3 0 0 1 6 0v4"></path>
+    </svg>
+    <h1 id="title">Ups, Twoje pliki są zaszyfrowane</h1>
+    <p>Twoje dokumenty zostały zablokowane. Aby je odzyskać, musisz zapłacić okup.</p>
+    <button class="ransom-btn" type="button" aria-label="Zapłać okup">Zapłać okup</button>
+  </main>
+</body>
+</html>
+
